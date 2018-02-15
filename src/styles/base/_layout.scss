@@ -232,7 +232,10 @@
   transform: rotate(-90deg);
   overflow: hidden;
 
-  left: 3rem;
+  left: 2rem;
+  @media #{$large_mq} {
+    left: 3rem;
+  }
   @media #{$xlarge_mq} {
     left: 4rem;
   }

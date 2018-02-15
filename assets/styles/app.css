@@ -509,11 +509,14 @@ img {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   overflow: hidden;
-  left: 3rem;
+  left: 2rem;
   opacity: 0;
   -webkit-transition: opacity .5s;
   transition: opacity .5s;
   pointer-events: none; }
+  @media (min-width: 1024px) {
+    .left-vertical-column {
+      left: 3rem; } }
   @media (min-width: 1200px) {
     .left-vertical-column {
       left: 4rem; } }
