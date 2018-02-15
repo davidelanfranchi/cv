@@ -51,8 +51,7 @@ var App = (function () {
       document.body.classList.add('animation-step-2');
       setTimeout(function(){
         onetime(sidebarEl, animationEvent, step3);
-      },1)
-      
+      },1) 
 
     }
 

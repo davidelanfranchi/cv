@@ -2,12 +2,12 @@
 
 html,
 body{
-	margin: 0;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6,
 p,ul{
-	margin-top: 0;
+  margin-top: 0;
 }
 
 a {
@@ -16,12 +16,12 @@ a {
 }
 
 ul{
-	list-style-type: none;
-	padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 img{
-	max-width: 100%;
+  max-width: 100%;
 }
 
 
@@ -29,14 +29,14 @@ img{
 
 @mixin hide-on-small {
   display: none!important;
-	@media #{$medium_mq} {
-		display: inherit;
-	}
+  @media #{$medium_mq} {
+    display: inherit;
+  }
 }
 
 @mixin show-on-small {
-	@media #{$medium_mq} {
-		display: none;
-	}
+  @media #{$medium_mq} {
+    display: none;
+  }
 }
 

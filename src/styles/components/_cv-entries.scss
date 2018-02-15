@@ -2,17 +2,17 @@
 
 .cv-entries{
 
-	@media #{$xxxlarge_mq} {
+  @media #{$xxxlarge_mq} {
 
-		display: flex;
-		flex-flow: wrap;
-		justify-content: space-between;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
 
-		li{
-			width: 47%;
-		}
+    li{
+      width: 47%;
+    }
 
-	}
+  }
 
 }
 
@@ -20,88 +20,87 @@
 
 .cv-entry{
 
-	max-width: 700px;
+  max-width: 700px;
 
-	margin-bottom: 40px;
-	@media #{$medium_mq} {
-		margin-bottom: 50px;
-	}
-	@media #{$xxlarge_mq} {
-		margin-bottom: 70px;
-	}
+  margin-bottom: 40px;
+  @media #{$medium_mq} {
+    margin-bottom: 50px;
+  }
+  @media #{$xxlarge_mq} {
+    margin-bottom: 70px;
+  }
 
-	&__date{
+  &__date{
 
-		font-weight: 300;
-		color: #9e9e9e;
+    font-weight: 300;
+    color: #9e9e9e;
 
-		display: block;
+    display: block;
 
-	}
+  }
 
-	&__title{
+  &__title{
 
-		font-weight: 400;
-		
-		letter-spacing: .5px;
+    font-weight: 400;
+    
+    letter-spacing: .5px;
     line-height: 1.3;
 
-		font-size: 16px;
-		@media #{$medium_mq} {
-			font-size: 18px;
-		}
-		@media #{$large_mq} {
-			font-size: 20px;
-		}
-		@media #{$xlarge_mq} {
-			font-size: 22px;
-		}
-		@media #{$xxlarge_mq} {
-			font-size: 21px;
-		}
+    font-size: 16px;
+    @media #{$medium_mq} {
+      font-size: 18px;
+    }
+    @media #{$large_mq} {
+      font-size: 20px;
+    }
+    @media #{$xlarge_mq} {
+      font-size: 22px;
+    }
+    @media #{$xxlarge_mq} {
+      font-size: 21px;
+    }
 
-		margin-bottom: .2em;
-		@media #{$xxlarge_mq} {
-			margin-bottom: .3em;
-		}
+    margin-bottom: .2em;
+    @media #{$xxlarge_mq} {
+      margin-bottom: .3em;
+    }
 
-		span, a{
-			font-weight: 300;
-			color: #9e9e9e;
+    span, a{
+      font-weight: 300;
+      color: #9e9e9e;
 
-			transition: color .3s;
+      transition: color .3s;
 
-			&:hover{
-				color: #000;
-			}
+      &:hover{
+        color: #000;
+      }
 
-		}
-		
-	}
+    }
+    
+  }
 
-	&__description{
+  &__description{
 
-		font-family: $secondary-font-stack;
-		line-height: 1.3;
-		color: #6d6d6d;
-		letter-spacing: 1px;
+    font-family: $secondary-font-stack;
+    line-height: 1.3;
+    color: #6d6d6d;
+    letter-spacing: 1px;
 
-		font-size: 14px;
-		@media #{$medium_mq} {
-			font-size: 16px;
-		}
+    font-size: 14px;
+    @media #{$medium_mq} {
+      font-size: 16px;
+    }
 
-	}
+  }
 
+  @media #{$large_mq} {
 
-	@media #{$large_mq} {
+    display: flex;
 
-		display: flex;
+    &__date{
+      flex: 0 0 100px;
+    }
 
-		&__date{
-			flex: 0 0 100px;
-		}
-
-	}
+  }
 
 }
