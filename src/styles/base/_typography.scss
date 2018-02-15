@@ -50,7 +50,9 @@ body{
   }
 
   br{
-    @include hide-on-small;
+    @media #{$small_mq} {
+      display: none;
+    }
   }
   
 }

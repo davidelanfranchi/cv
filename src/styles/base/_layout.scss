@@ -93,19 +93,19 @@
 
 .header{
 
-  margin-top: 100px;
-  margin-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   @media #{$medium_mq} {
-    margin-top: 150px;
-    margin-bottom: 75px;
+    padding-top: 150px;
+    padding-bottom: 75px;
   }
   @media #{$large_mq} {
-    margin-top: 180px;
-    margin-bottom: 90px;
+    padding-top: 180px;
+    padding-bottom: 90px;
   }
   @media #{$xlarge_mq} {
-    margin-top: 200px;
-    margin-bottom: 150px;
+    padding-top: 200px;
+    padding-bottom: 150px;
   }
 
 }
@@ -136,7 +136,6 @@
 
 .sidebar{
 
-  background-color: $dark-color;
   overflow: hidden;
 
   position: fixed;
@@ -151,10 +150,10 @@
 .sidebar-image{
 
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: -5%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
 
   background-size: cover;
   background-position: center center;

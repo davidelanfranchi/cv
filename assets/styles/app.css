@@ -409,20 +409,20 @@ img {
       margin-right: 25%; } }
 
 .header {
-  margin-top: 100px;
-  margin-bottom: 50px; }
+  padding-top: 100px;
+  padding-bottom: 50px; }
   @media (min-width: 640px) {
     .header {
-      margin-top: 150px;
-      margin-bottom: 75px; } }
+      padding-top: 150px;
+      padding-bottom: 75px; } }
   @media (min-width: 1024px) {
     .header {
-      margin-top: 180px;
-      margin-bottom: 90px; } }
+      padding-top: 180px;
+      padding-bottom: 90px; } }
   @media (min-width: 1200px) {
     .header {
-      margin-top: 200px;
-      margin-bottom: 150px; } }
+      padding-top: 200px;
+      padding-bottom: 150px; } }
 
 .section {
   padding-bottom: 3.75em;
@@ -443,7 +443,6 @@ img {
   background-color: silver; }
 
 .sidebar {
-  background-color: #545454;
   overflow: hidden;
   position: fixed;
   z-index: 4;
@@ -454,10 +453,10 @@ img {
 
 .sidebar-image {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: -5%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
   background-size: cover;
   background-position: center center;
   background-image: url("https://source.unsplash.com/_nLiAdIotdg/640x850");
@@ -610,11 +609,9 @@ body {
   @media (min-width: 1600px) {
     .main-title {
       font-size: 75px; } }
-  .main-title br {
-    display: none !important; }
-    @media (min-width: 640px) {
-      .main-title br {
-        display: inherit; } }
+  @media (max-width: 639px) {
+    .main-title br {
+      display: none; } }
 
 .section-title {
   font-weight: 300;
@@ -661,6 +658,10 @@ body {
     opacity: 0;
     -webkit-transform: scale(0.8);
             transform: scale(0.8); }
+  80% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -671,6 +672,10 @@ body {
     opacity: 0;
     -webkit-transform: scale(0.8);
             transform: scale(0.8); }
+  80% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -680,6 +685,9 @@ body {
   0% {
     -webkit-transform: scale(1.2);
             transform: scale(1.2); }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
   100% {
     -webkit-transform: scale(1);
             transform: scale(1); } }
@@ -688,6 +696,9 @@ body {
   0% {
     -webkit-transform: scale(1.2);
             transform: scale(1.2); }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
   100% {
     -webkit-transform: scale(1);
             transform: scale(1); } }
@@ -737,16 +748,16 @@ body {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); }
   100% {
-    -webkit-transform: translate3d(-50%, 0, 0);
-            transform: translate3d(-50%, 0, 0); } }
+    -webkit-transform: translate3d(-35%, 0, 0);
+            transform: translate3d(-35%, 0, 0); } }
 
 @keyframes sidebarImageStep2 {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); }
   100% {
-    -webkit-transform: translate3d(-50%, 0, 0);
-            transform: translate3d(-50%, 0, 0); } }
+    -webkit-transform: translate3d(-35%, 0, 0);
+            transform: translate3d(-35%, 0, 0); } }
 
 @-webkit-keyframes skewUpAnimation--small {
   0% {
@@ -836,12 +847,12 @@ body {
     will-change: transform; }
 
 .animation-step-1 .sidebar {
-  -webkit-animation: sidebarStep1 1s;
-          animation: sidebarStep1 1s; }
+  -webkit-animation: sidebarStep1 1.8s;
+          animation: sidebarStep1 1.8s; }
 
 .animation-step-1 .sidebar-image {
-  -webkit-animation: sidebarImageStep1 1s;
-          animation: sidebarImageStep1 1s; }
+  -webkit-animation: sidebarImageStep1 1.8s;
+          animation: sidebarImageStep1 1.8s; }
 
 .animation-step-2 .sidebar {
   -webkit-animation: sidebarStep2--small 1s cubic-bezier(0, 1.06, 0.58, 1);
@@ -865,8 +876,8 @@ body {
               transform: translate3d(75%, 0, 0); } }
 
 .animation-step-3 .sidebar-image {
-  -webkit-transform: translate3d(-50%, 0, 0);
-          transform: translate3d(-50%, 0, 0); }
+  -webkit-transform: translate3d(-35%, 0, 0);
+          transform: translate3d(-35%, 0, 0); }
 
 .animation-step-3 .skew-up {
   -webkit-animation: skewUpAnimation--small 1s cubic-bezier(0, 1.02, 1, 1) forwards;
