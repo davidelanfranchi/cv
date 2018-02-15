@@ -28,7 +28,7 @@ img{
 // Mixins
 
 @mixin hide-on-small {
-  display: none;
+  display: none!important;
 	@media #{$medium_mq} {
 		display: inherit;
 	}

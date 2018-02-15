@@ -611,7 +611,7 @@ body {
     .main-title {
       font-size: 75px; } }
   .main-title br {
-    display: none; }
+    display: none !important; }
     @media (min-width: 640px) {
       .main-title br {
         display: inherit; } }
@@ -1037,12 +1037,11 @@ body {
       .footer p a:hover {
         color: #fff; }
     .footer p span {
-      display: inline-block !important;
-      margin: 0 1em;
-      display: none; }
-      @media (min-width: 640px) {
+      display: inline-block;
+      margin: 0 1em; }
+      @media (max-width: 639px) {
         .footer p span {
-          display: inherit; } }
+          display: none; } }
     @media (min-width: 640px) {
       .footer p br {
         display: none; } }

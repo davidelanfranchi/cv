@@ -30,10 +30,12 @@
 		}
 
 		span{
-			display: inline-block!important;
+			display: inline-block;
 			margin: 0 1em;
 
-			@include hide-on-small;
+			@media #{$small_mq} {
+				display: none;
+			}
 
 		}
 
