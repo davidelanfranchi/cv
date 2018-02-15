@@ -9,19 +9,18 @@
 
 	  <meta name="robots" content="noindex, nofollow">
 
-	  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+	  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
 
 	  <title>{{ data.meta_title }}</title>
 	  <meta name="description" content="{{ data.meta_description }}">
 
 	  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Titillium+Web:300" rel="stylesheet">
 
-	  <link rel="stylesheet" href="/assets/styles/app.min.css">
+	  <link rel="stylesheet" href="assets/styles/app.min.css">
 
 	</head>
 
 	<body>
-
 
 		<main class="main">
 
@@ -33,12 +32,11 @@
 
 			</header>
 
-
 			<section class="section section--profile">
 
 					<div class="col1 skew-up">
 
-						<img class="profile-picture" src="/assets/images/profile-picture.jpg" alt="Profile picture" width="500" alt="684">
+						<img class="profile-picture" src="assets/images/profile-picture.jpg" alt="Profile picture" width="500" alt="684">
 
 					</div>
 
@@ -52,7 +50,6 @@
 
 			</section>
 
-
 			<section class="section fade-up">
 
 				<h2 class="section-title">{{ data.work_experience.title }}</h2>
@@ -60,7 +57,6 @@
 				{{> cv-entries entries=data.work_experience.entries }}
 				
 			</section>
-
 
 			<section class="section fade-up">
 
@@ -70,7 +66,6 @@
 
 			</section>
 
-
 			<section class="section fade-up">
 
 				<h2 class="section-title">{{ data.education.title }}</h2>
@@ -78,7 +73,6 @@
 				{{> cv-entries entries=data.education.entries }}
 				
 			</section>
-
 
 			<aside class="contact-box">
 
@@ -88,7 +82,6 @@
 
 			</aside>
 
-
 			<footer class="footer">
 
 				<div class="container">
@@ -96,7 +89,6 @@
 				</div>
 				
 			</footer>
-
 
 		</main>
 
@@ -106,19 +98,26 @@
 
 		</div>
 
-
 		<div class="left-vertical-column">
 			<span class="small-cv-title">Davide Lanfranchi <span>/ Resume</span></span>
 		</div>
 
 		<div class="loading"><span></span></div>
 
-
-	  <script src="/assets/scripts/app.min.js"></script>
+	  <script src="assets/scripts/app.min.js"></script>
 	  <script>
 	  	window.onload = function() {
 	  	  App.init();
 	  	}
+	  </script>
+
+	  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46402937-5"></script>
+	  <script>
+	    window.dataLayer = window.dataLayer || [];
+	    function gtag(){dataLayer.push(arguments);}
+	    gtag('js', new Date());
+
+	    gtag('config', 'UA-46402937-5');
 	  </script>
 
 	</body>
