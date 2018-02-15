@@ -1,0 +1,115 @@
+// Typography
+
+body{
+
+	font-family: $primary-font-stack;
+	color: $body-color;
+	line-height: 1.5;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+
+}
+
+.small-cv-title{
+
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+
+	font-weight: 600;
+	span{
+		font-weight: 300
+	}
+
+	font-size: 12px;
+
+	color: #969696;
+	
+
+}
+
+.main-title{
+
+	font-weight: 300;
+	line-height: 1;
+
+	font-size: 30px;
+	@media #{$medium_mq} {
+		font-size: 50px;
+	}
+	@media #{$large_mq} {
+		font-size: 60px;
+	}
+	@media #{$xlarge_mq} {
+		font-size: 70px;
+	}
+	@media #{$xxxlarge_mq} {
+		font-size: 75px;
+	}
+
+	br{
+		@include hide-on-small;
+	}
+	
+
+}
+
+
+
+.section-title{
+
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #9e9e9e;
+
+	&:not(.-less-margin-b){
+		margin-bottom: 50px;
+		@media #{$medium_mq} {
+			margin-bottom: 60px;
+		}
+		@media #{$large_mq} {
+			margin-bottom: 70px;
+		}
+		@media #{$xlarge_mq} {
+			margin-bottom: 80px;
+		}
+	}
+
+	&.-less-margin-b{
+		margin-bottom: 30px;
+	}
+	
+
+	font-size: 12px;
+	@media #{$medium_mq} {
+		font-size: 13px;
+	}
+
+	
+
+}
+
+.large-copy{
+
+	font-family: $secondary-font-stack;
+	font-weight: 300;
+
+	font-size: 18px;
+	@media #{$medium_mq} {
+		font-size: 20px;
+	}
+	@media #{$large_mq} {
+		font-size: 20px;
+	}
+	@media #{$xlarge_mq} {
+		font-size: 24px;
+	}
+	@media #{$xxxlarge_mq} {
+		font-size: 26px;
+	}
+
+}
+
+

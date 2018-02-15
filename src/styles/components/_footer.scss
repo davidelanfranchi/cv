@@ -1,0 +1,47 @@
+// Footer
+
+.footer{
+
+	background-color: #131313;
+	padding-bottom: 10px;
+
+	@media #{$medium_mq} {
+		text-align: right;
+		padding-bottom: 20px;
+	}
+	
+	
+	p{
+
+		margin: 0;
+
+		font-family: $primary-font-stack;
+		font-weight: 300;
+		font-size: 13px;
+		color: #999;
+		letter-spacing: .5px;
+
+		a{
+			color: inherit;
+			transition: color .3s;
+			&:hover{
+				color: #fff;
+			}
+		}
+
+		span{
+			display: inline-block!important;
+			margin: 0 1em;
+
+			@include hide-on-small;
+
+		}
+
+		br{
+			@include show-on-small;
+		}
+
+	}
+
+	
+}

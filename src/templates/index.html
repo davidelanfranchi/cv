@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  <meta name="robots" content="noindex, nofollow">
+
+	  <title>{{ data.meta_title }}</title>
+	  <meta name="description" content="{{ data.meta_description }}">
+
+	  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Titillium+Web:300" rel="stylesheet">
+
+	  <link rel="stylesheet" href="/assets/styles/app.min.css">
+
+	</head>
+
+	<body>
+
+
+		<main class="main">
+
+			<header class="header skew-up">
+
+				<h1 class="small-cv-title ">Davide Lanfranchi <span>/ Resume</span></h1>
+
+				<p class="main-title">{{{ data.intro_title }}}</p>
+
+			</header>
+
+
+			<section class="section section--profile">
+
+					<div class="col1 skew-up">
+
+						<img class="profile-picture" src="/assets/images/profile-picture.jpg" alt="Profile picture" width="500" alt="684">
+
+					</div>
+
+					<div class="col2 profile-content fade-up">
+
+						<h2 class="section-title -less-margin-b">{{ data.profile.title }}</h2>
+
+						<p class="large-copy">{{{ data.profile.text }}}</p>
+
+					</div>
+
+			</section>
+
+
+			<section class="section fade-up">
+
+				<h2 class="section-title">{{ data.work_experience.title }}</h2>
+
+				{{> cv-entries entries=data.work_experience.entries }}
+				
+			</section>
+
+
+			<section class="section fade-up">
+
+				<h2 class="section-title">{{ data.training.title }}</h2>
+
+				{{> cv-entries entries=data.training.entries }}
+
+			</section>
+
+
+			<section class="section fade-up">
+
+				<h2 class="section-title">{{ data.education.title }}</h2>
+
+				{{> cv-entries entries=data.education.entries }}
+				
+			</section>
+
+
+			<aside class="contact-box">
+
+				<div class="container">
+					<p class="skew-up">Contact me by <a href="mailto:{{ data.email_address }}">email</a> or <a href="tel:{{ data.phone_number }}">phone</a>.</p>
+				</div>
+
+			</aside>
+
+
+			<footer class="footer">
+
+				<div class="container">
+					<p class="fade-in"><a href="#">Source code</a> <br><span>·</span> Last update {{ data.update }} <br><span>·</span> Photo by <a href="https://unsplash.com/@tentides" target="_blank">Jeremy Bishop</a></p>
+				</div>
+				
+			</footer>
+
+
+		</main>
+
+		<div class="sidebar">
+
+			<div class="sidebar-image"></div>
+
+		</div>
+
+
+		<div class="left-vertical-column">
+			<span class="small-cv-title">Davide Lanfranchi <span>/ Resume</span></span>
+		</div>
+
+		<div class="loading"><span></span></div>
+
+
+	  <script src="/assets/scripts/app.min.js"></script>
+	  <script>
+	  	window.onload = function() {
+	  	  App.init();
+	  	}
+	  </script>
+
+	</body>
+
+</html>

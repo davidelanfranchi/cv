@@ -1,0 +1,27 @@
+<ul class="cv-entries">
+	{{#each entries}}
+	<li>
+
+		<div class="cv-entry">
+
+			<div class="cv-entry__date">
+				<span>{{ date }}</span>
+			</div>
+
+			<div class="cv-entry__content">
+
+				<h3 class="cv-entry__title">{{ title }}, 
+					{{#if reference_url}}<a href="{{ reference_url }}" target="_blank">{{/if}}
+						<span>{{ reference }}</span>
+					{{#if reference_url}}</a>{{/if}}
+				</h3>
+
+				<p class="cv-entry__description">{{{ description }}}</p>
+
+			</div>
+
+		</div>
+		
+	</li>
+	{{/each}}
+</ul>
