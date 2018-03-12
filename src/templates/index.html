@@ -1,125 +1,140 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="robots" content="noindex, nofollow">
+  <meta name="robots" content="noindex, nofollow">
 
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
 
-    <title>{{ data.meta_title }}</title>
-    <meta name="description" content="{{ data.meta_description }}">
+  <title>{{ data.meta_title }}</title>
+  <meta name="description" content="{{ data.meta_description }}">
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Titillium+Web:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Titillium+Web:300" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/styles/app.min.css">
+  <link rel="stylesheet" href="assets/styles/app.min.css">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <main class="main">
+  <main class="main">
 
-      <header class="header skew-up">
+    <header class="header skew-up">
 
-        <h1 class="small-cv-title ">Davide Lanfranchi <span>/ Resume</span></h1>
+      <h1 class="small-cv-title ">Davide Lanfranchi
+        <span>/ Resume</span>
+      </h1>
 
-        <p class="main-title">{{{ data.intro_title }}}</p>
+      <p class="main-title">{{{ data.intro_title }}}</p>
 
-      </header>
+    </header>
 
-      <section class="section section--profile">
+    <section class="section section--profile">
 
-          <div class="col1 skew-up">
+      <div class="col1 skew-up">
 
-            <img class="profile-picture" src="assets/images/profile-picture.jpg" alt="Profile picture" width="500" alt="684">
+        <img class="profile-picture" src="assets/images/profile-picture.jpg" alt="Profile picture" width="500" alt="684">
 
-          </div>
+      </div>
 
-          <div class="col2 profile-content fade-up">
+      <div class="col2 profile-content fade-up">
 
-            <h2 class="section-title -less-margin-b">{{ data.profile.title }}</h2>
+        <h2 class="section-title -less-margin-b">{{ data.profile.title }}</h2>
 
-            <p class="large-copy">{{{ data.profile.text }}}</p>
+        <p class="large-copy">{{{ data.profile.text }}}</p>
 
-          </div>
+      </div>
 
-      </section>
+    </section>
 
-      <section class="section fade-up">
+    <section class="section fade-up">
 
-        <h2 class="section-title">{{ data.work_experience.title }}</h2>
+      <h2 class="section-title">{{ data.work_experience.title }}</h2>
 
-        {{> cv-entries entries=data.work_experience.entries }}
-        
-      </section>
+      {{> cv-entries entries=data.work_experience.entries }}
 
-      <section class="section fade-up">
+    </section>
 
-        <h2 class="section-title">{{ data.training.title }}</h2>
+    <section class="section fade-up">
 
-        {{> cv-entries entries=data.training.entries }}
+      <h2 class="section-title">{{ data.training.title }}</h2>
 
-      </section>
+      {{> cv-entries entries=data.training.entries }}
 
-      <section class="section fade-up">
+    </section>
 
-        <h2 class="section-title">{{ data.education.title }}</h2>
+    <section class="section fade-up">
 
-        {{> cv-entries entries=data.education.entries }}
-        
-      </section>
+      <h2 class="section-title">{{ data.education.title }}</h2>
 
-      <aside class="contact-box">
+      {{> cv-entries entries=data.education.entries }}
 
-        <div class="container">
-          <p class="skew-up">Contact me by <a href="mailto:{{ data.email_address }}">email</a> or <a href="tel:{{ data.phone_number }}">phone</a>.</p>
-        </div>
+    </section>
 
-      </aside>
+    <aside class="contact-box">
 
-      <footer class="footer">
+      <div class="container">
+        <p class="skew-up">Contact me by
+          <a href="mailto:{{ data.email_address }}">email</a> or
+          <a href="tel:{{ data.phone_number }}">phone</a>.</p>
+      </div>
 
-        <div class="container">
-          <p class="fade-in"><a href="https://github.com/davidelanfranchi/cv">Source code</a> <br><span>·</span> Last update {{ data.update }} <br><span>·</span> Photo by <a href="https://unsplash.com/@tentides" target="_blank">Jeremy Bishop</a></p>
-        </div>
-        
-      </footer>
+    </aside>
 
-    </main>
+    <footer class="footer">
 
-    <div class="sidebar">
+      <div class="container">
+        <p class="fade-in">
+          <a href="https://github.com/davidelanfranchi/cv">Source code</a>
+          <br>
+          <span>·</span> Last update {{ data.update }}
+          <br>
+          <span>·</span> Photo by
+          <a href="https://unsplash.com/@tentides" target="_blank">Jeremy Bishop</a>
+        </p>
+      </div>
 
-      <div class="sidebar-image"></div>
+    </footer>
 
-    </div>
+  </main>
 
-    <div class="left-vertical-column">
-      <span class="small-cv-title">Davide Lanfranchi <span>/ Resume</span></span>
-    </div>
+  <div class="sidebar">
 
-    <div class="loading"><span></span></div>
+    <div class="sidebar-image"></div>
 
-    <script src="assets/scripts/app.min.js"></script>
-    <script>
-      window.onload = function() {
-        App.init();
-      }
-    </script>
+  </div>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46402937-5"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <div class="left-vertical-column">
+    <span class="small-cv-title">Davide Lanfranchi
+      <span>/ Resume</span>
+    </span>
+  </div>
 
-      gtag('config', 'UA-46402937-5');
-    </script>
+  <div class="loading">
+    <span></span>
+  </div>
 
-  </body>
+  <script src="assets/scripts/app.min.js"></script>
+  <script>
+    window.onload = function () {
+      App.init();
+    }
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46402937-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-46402937-5');
+  </script>
+
+</body>
 
 </html>
