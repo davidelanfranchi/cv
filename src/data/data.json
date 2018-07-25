@@ -1,5 +1,5 @@
 {
-  "update": "Feb 15th, 2018",
+  "update": "Jul 25th, 2018",
 
   "meta_title": "Davide Lanfranchi's Curriculum Vitae",
   "meta_description":
@@ -11,14 +11,22 @@
   "profile": {
     "title": "01/ Profile",
     "text":
-      "31 years old, based in Padua, Venice area.<br><br>I do on a daily basis (semantically structured) HTML, (well designed) CSS and (efficient) JavaScript, enjoying the crossroad of code and design. I work with Sketch, Photoshop, Illustrator, Blend4Web, Gulp, SASS, GSAP, Vue.js…<br><br>My background is in cinema studies and communication."
+      "31 years old, based in Padua, Venice area.<br><br>I do on a daily basis (semantically structured) HTML, (well designed) CSS and (efficient) JavaScript, enjoying the crossroad of code and design. I work with Sketch, Adobe XD, Photoshop, Illustrator, Blend4Web, Gulp, SASS, GSAP, Vue.js…<br><br>My background is in cinema studies and communication."
   },
 
   "work_experience": {
     "title": "02/ Work Experience",
     "entries": [
       {
-        "date": "2015–now",
+        "date": "2018–now",
+        "title": "Front-end developer / designer",
+        "reference": "we-go",
+        "reference_url": "https://www.we-go.it/",
+        "description":
+          "Building bold stuff for brands that think big. I take part in multidisciplinary creative projects fine-tuning their digital outcome, paying specific attention on visual details and performance."
+      },
+      {
+        "date": "2015–2018",
         "title": "Front-end developer / designer",
         "reference": "Quamm",
         "reference_url": "https://www.quamm.it/",
@@ -56,7 +64,7 @@
           "Angular and Ionic full immersion workshop, following the creation of a real hybrid mobile app."
       },
       {
-        "date": "2012—2013",
+        "date": "2012–2013",
         "title": "Press Office",
         "reference": "Studio Lavia",
         "reference_url": "http://www.studiolavia.it/",
@@ -64,7 +72,7 @@
           "Press office and communication for Padua's municipality cultural exhibitions (RAM, Galileo Award). Event management."
       },
       {
-        "date": "2012—2013",
+        "date": "2012–2013",
         "title": "Research and development",
         "reference": "Cinema Key",
         "reference_url": "http://www.cinemakey.it/",
@@ -78,7 +86,7 @@
     "title": "03/ Education",
     "entries": [
       {
-        "date": "2013—2014",
+        "date": "2013–2014",
         "title": "Interactive Media for Interior Design",
         "reference": "IUAV",
         "reference_url": "http://master-imid-iuav.com/",
@@ -86,7 +94,7 @@
           "Master degree focused on digital innovation in the interior design sector: a leap into 3D modeling, photorealistic rendering, interaction design, video mapping."
       },
       {
-        "date": "2013—2014",
+        "date": "2013–2014",
         "title": "Web Design",
         "reference": "Scuola Comics",
         "reference_url": "http://www.scuolacomics.com/corsi/web-design/",
@@ -103,7 +111,7 @@
           "Visual culture, film and new media studies to learn <a href=\"https://www.google.it/search?q=How+to+See+the+World+Nicholas+Mirzoeff&oq=How+to+See+the+World+Nicholas+Mirzoeff&aqs=chrome..69i57j69i60l3j0l2.336j0j4&sourceid=chrome&ie=UTF-8\" target=\"_blank\">how to see the world</a>. "
       },
       {
-        "date": "2005—2008",
+        "date": "2005–2008",
         "title": "Communication Sciences",
         "reference": "UniBg",
         "reference_url": "https://www.unibg.it/LT-CMPI",
